@@ -4,3 +4,5 @@ numpy
 plotly
 streamlit-lottie
 scikit-learn
+neattext==0.1.3
+
