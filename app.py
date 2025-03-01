@@ -5,11 +5,14 @@ import numpy as np
 app = Flask(__name__)
 
 # Load Data
-movies_df = pd.read_csv('movies_df.csv')
-tv_show = pd.read_csv('tv_show.csv')
-movies_sim = np.load('movies_sim.npz')['m']
-tv_sim = np.load('tv_sim.npz')['t']
+import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+movies_df = pd.read_csv(os.path.join(BASE_DIR, 'movies_df.csv'))
+tv_show = pd.read_csv(os.path.join(BASE_DIR, 'tv_show.csv'))
+movies_sim = np.load(os.path.join(BASE_DIR, 'movies_sim.npz'))['m']
+tv_sim = np.load(os.path.join(BASE_DIR, 'tv_sim.npz'))['t']
 # Recommendation Function
 def recommend(title):
     if title in movies_df['title'].values:
