@@ -1,4 +1,3 @@
-get_ipython().system('pip install neattext')
 import pandas as pd
 import numpy as np
 import neattext.functions as nfx
