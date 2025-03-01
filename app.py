@@ -1,5 +1,15 @@
+import os
+import subprocess
+import sys
+
+# Ensure plotly is installed
+try:
+    import plotly.graph_objects as go
+except ModuleNotFoundError:
+    os.system(f"{sys.executable} -m pip install plotly")
+    import plotly.graph_objects as go
+
 import streamlit as st
-import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 import json
