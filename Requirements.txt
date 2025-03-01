@@ -4,4 +4,3 @@ numpy
 plotly
 streamlit-lottie
 scikit-learn
-git+https://github.com/Jcharis/neattext.git
