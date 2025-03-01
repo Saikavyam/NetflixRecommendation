@@ -3,5 +3,5 @@ pandas
 numpy
 plotly
 streamlit-lottie
-neattext
 scikit-learn
+neattext==0.1.3
