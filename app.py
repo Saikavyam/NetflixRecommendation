@@ -1,3 +1,11 @@
+import subprocess
+import sys
+try:
+    import neattext.functions as nfx
+except ModuleNotFoundError:
+    subprocess.run([sys.executable, "-m", "pip", "install", "neattext"])
+    import neattext.functions as nfx  
+
 import pandas as pd
 import numpy as np
 import neattext.functions as nfx
