@@ -9,10 +9,13 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-movies_df = pd.read_csv(os.path.join(BASE_DIR, 'movies_df.csv'))
-tv_show = pd.read_csv(os.path.join(BASE_DIR, 'tv_show.csv'))
-movies_sim = np.load(os.path.join(BASE_DIR, 'movies_sim.npz.7z'))['m']
-tv_sim = np.load(os.path.join(BASE_DIR, 'tv_sim.npz'))['t']
+# Load files with pickle enabled
+movies_sim = np.load(os.path.join(BASE_DIR, 'movies_sim.npz'), allow_pickle=True)["m"]
+tv_sim = np.load(os.path.join(BASE_DIR, 'tv_sim.npz'), allow_pickle=True)["t"]
+
+movies_df = pd.read_csv(os.path.join(BASE_DIR, "movies_df.csv"))
+tv_show = pd.read_csv(os.path.join(BASE_DIR, "tv_show.csv"))
+
 # Recommendation Function
 def recommend(title):
     if title in movies_df['title'].values:
