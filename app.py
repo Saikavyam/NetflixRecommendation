@@ -10,7 +10,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load files with pickle enabled
-movies_sim = np.load(os.path.join(BASE_DIR, 'movies_sim.npz'), allow_pickle=True)["m"]
+movies_sim = np.load(os.path.join(BASE_DIR, 'movies_sim.npz.7z'), allow_pickle=True)["m"]
 tv_sim = np.load(os.path.join(BASE_DIR, 'tv_sim.npz'), allow_pickle=True)["t"]
 
 movies_df = pd.read_csv(os.path.join(BASE_DIR, "movies_df.csv"))
