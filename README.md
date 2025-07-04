@@ -1,8 +1,8 @@
-#Netflix Recommendation System 🎬
+# Netflix Recommendation System 🎬
 
 A content-based movie recommendation system built with **Python, Flask, and Scikit-Learn** that suggests films based on user preferences.  
 
-🔗 **Live Demo**: *(https://prabhakuniti-netflixrec-app-r1iobc.streamlit.app/)* 
+🔗 **Live Demo**: (https://prabhakuniti-netflixrec-app-r1iobc.streamlit.app/)
 
 ---
 
