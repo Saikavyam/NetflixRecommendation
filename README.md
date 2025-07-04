@@ -2,7 +2,7 @@
 
 A content-based movie recommendation system built with **Python, Flask, and Scikit-Learn** that suggests films based on user preferences.  
 
-🔗 **Live Demo**: *(https://prabhakuniti-netflixrec-app-r1iobc.streamlit.app/)*(Optional: Deploy on Render/Heroku and add link)*  
+🔗 **Live Demo**: *(https://prabhakuniti-netflixrec-app-r1iobc.streamlit.app/)* 
 
 ---
 
